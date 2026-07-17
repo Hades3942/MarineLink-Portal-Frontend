@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fisher Transactions - MarineLink Portal</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/tables.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>MarineLink Portal</h2>
+
+    <ul>
+        <li onclick="goDashboard()">Dashboard</li>
+        <li onclick="navigate('fisher_listings')">Listings</li>
+        <li onclick="navigate('create-listing')">Create Listing</li>
+        <li onclick="navigate('my-listings')">My Listings</li>
+        <li onclick="navigate('fisher_transactions')">Transactions</li>
+        <li onclick="logout()">Logout</li>
+    </ul>
+</div>
+
+<div class="main">
+    <h1>My Transactions</h1>
+
+    <table id="fisherTransactionsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Listing</th>
+                <th>Buyer</th>
+                <th>Total Price (TZS)</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <p id="error"></p>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/fisher-transactions.js"></script>
+</body>
+</html>

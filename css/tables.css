@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: linear-gradient(135deg, #003366, #001a33);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 12px;
+    margin: 8px 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* Main content */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+thead {
+    background: #003366;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background: #f1f1f1;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cancel-btn {
+    background: #ccc;
+    margin-left: 10px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background: #001a33;
+}
+
+#pageInfo {
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.delete-btn:hover {
+    background: #990000;
+}
+
+.delete-confirm-btn {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-confirm-btn:hover {
+    background: #990000;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 8px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+.edit-btn {
+    background-color: hwb(139 3% 31%);
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #b30000;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #13527d;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+#transactionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+#transactionsTable thead {
+    background-color: #0a2a43;
+    color: white;
+}
+
+#transactionsTable th,
+#transactionsTable td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.purchase-btn {
+    background-color: hwb(139 3% 31%);
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.purchase-btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+#fisherTransactionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+#fisherTransactionsTable thead {
+    background-color: #0a2a43;
+    color: white;
+}
+
+#fisherTransactionsTable th,
+#fisherTransactionsTable td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#adminListingsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+#adminListingsTable thead {
+    background-color: #0a2a43;
+    color: white;
+}
+
+#adminListingsTable th,
+#adminListingsTable td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+
+
+
+

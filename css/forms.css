@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: linear-gradient(135deg, #003366, #001a33);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 12px;
+    margin: 8px 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Main content */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+.form-box {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #00cc66;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00994d;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+.form-container {
+    background: white;
+    padding: 25px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0a2a43;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #0a2a43;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #13527d;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+

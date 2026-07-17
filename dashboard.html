@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MarineLink Portal Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>MarineLink Portal</h2>
+
+        <ul>
+            <li onclick="goDashboard()">Dashboard</li>
+            <li onclick="navigate('admin_listings')">Listings</li>
+            <li onclick="navigate('admin_transactions')">Transactions</li>
+            <li onclick="navigate('admin_users')" id="adminOnly">Users</li>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <div class="dashboard-header">
+            <h2>Welcome, <span id="welcomeUser"></span></h2>
+        </div>
+
+        <div class="stats-grid">
+            <div class="card">
+                <h3>Total Users</h3>
+                <span id="totalUsers">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Total Listings</h3>
+                <span id="totalListings">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Total Transactions</h3>
+                <span id="totalTransactions">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <span id="totalRevenue">0 TZS</span>
+            </div>
+        </div>
+
+        <p id="error"></p>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

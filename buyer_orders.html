@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Orders - MarineLink Portal</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/tables.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>MarineLink Portal</h2>
+
+    <ul>
+        <li onclick="goDashboard()">Dashboard</li>
+        <li onclick="navigate('buyer_listings')">Listings</li>
+        <li onclick="navigate('buyer_orders')">My Orders</li>
+        <li onclick="logout()">Logout</li>
+    </ul>
+</div>
+
+<div class="main">
+    <h1>My Orders</h1>
+
+    <table id="buyerOrdersTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Listing</th>
+                <th>Fisher</th>
+                <th>Total Price (TZS)</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/buyer-orders.js"></script>
+</body>
+</html>

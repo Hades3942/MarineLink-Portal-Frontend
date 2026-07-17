@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Listing - MarineLink Portal</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>MarineLink Portal</h2>
+
+    <ul>
+        <li onclick="goDashboard()">Dashboard</li>
+        <li onclick="navigate('fisher_listings')">Listings</li>
+        <li onclick="navigate('create-listing')" id="fisherOnly">Create Listing</li>
+        <li onclick="navigate('my-listings')" id="fisherOnly">My Listings</li>
+        <li onclick="navigate('fisher_transactions')">Transactions</li>
+        <li onclick="logout()">Logout</li>
+    </ul>
+</div>
+
+<div class="main">
+    <h1>Create New Listing</h1>
+
+    <div class="form-container">
+        <label>Species</label>
+        <input id="species" placeholder="e.g. Tuna">
+
+        <label>Location</label>
+        <input id="location" placeholder="e.g. Nungwi">
+
+        <label>Weight (kg)</label>
+        <input id="weight" type="number" placeholder="e.g. 50">
+
+        <label>Price per Kg (TZS)</label>
+        <input id="price" type="number" placeholder="e.g. 12000">
+
+        <button onclick="createListing()" class="submit-btn">Create Listing</button>
+
+        <p id="message"></p>
+    </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/create-listing.js"></script>
+</body>
+</html>

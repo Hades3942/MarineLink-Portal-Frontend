@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #003366, #001a33);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00cc66;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+select {
+    padding: 14px 16px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    color: #333;
+}
+
+select option {
+    font-size: 14px;
+
+}
+
+button:hover {
+    background: #00994d;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.register-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #00cc66;
+    text-decoration: none;
+}
+
+#error {
+    color: #ff6666;
+    margin-top: 10px;
+}
